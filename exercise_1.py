@@ -1,5 +1,3 @@
-wheel = ([chr(i) for i in range(32, 127)] + [chr(i) for i in range(1040, 1104)]) #Колесо символов
-
 def caesar_cipher(text, shift, wheel):
     """
     Реализация шифра Цезаря
@@ -9,6 +7,7 @@ def caesar_cipher(text, shift, wheel):
         shift (int): величина сдвига (положительная - шифрование, отрицательная дешифрование)
         wheel (list): колесо символов
     """
+    wheel = ([chr(i) for i in range(32, 127)] + [chr(i) for i in range(1040, 1104)]) #Колесо символов
     result = []
     wheel_size = len(wheel)
     
