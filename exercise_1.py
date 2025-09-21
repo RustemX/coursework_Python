@@ -1,11 +1,10 @@
-def caesar_cipher(text, shift, wheel):
+def caesar_cipher(text, shift):
     """
     Реализация шифра Цезаря
 
     Args:
         text (str): передаваемый текст для шифрования
         shift (int): величина сдвига (положительная - шифрование, отрицательная дешифрование)
-        wheel (list): колесо символов
     """
     wheel = ([chr(i) for i in range(32, 127)] + [chr(i) for i in range(1040, 1104)]) #Колесо символов
     result = []
